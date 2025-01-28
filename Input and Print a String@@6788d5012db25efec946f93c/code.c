@@ -2,6 +2,6 @@
 int main() {
     char b[];
     scanf("%d",&b);
-    printf("You entered: %d", b);
+    printf("You entered: %s", b);
     return 0;
 }
