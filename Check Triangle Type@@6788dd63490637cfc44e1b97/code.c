@@ -10,6 +10,6 @@ int main(){
         pintf("Scalene");
     }
     else{
-        printf("Isosceles")
+        printf("Isosceles");
     }
 }
