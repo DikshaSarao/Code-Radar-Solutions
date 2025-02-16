@@ -8,7 +8,9 @@ int main(){
     float c;
     for(i=0;i<N;i++){
     scanf("%d" "%c" "%f",&a, &b, &c);
+    for(i=0;i<N;i++){
     printf("Roll Number: %d, Name: %c, Marks: %f",a,b,c);
+    }
     }
     return 0;
 
