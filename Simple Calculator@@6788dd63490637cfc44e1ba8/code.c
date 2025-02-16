@@ -6,19 +6,19 @@ int main() {
     scanf("%d" "%d" "%c", &a, &b, &ch);  // Space between format specifiers
      
     switch(ch) {         
-        case "+": 
+        case '+': 
             d = a + b;         
             printf("%d", d);         
             break;         
-        case "-": 
+        case '-': 
             d = a - b;         
             printf("%d", d);         
             break;         
-        case "/": 
+        case '/': 
             d = a / b;         
             printf("%d", d);         
             break;         
-        case "*": 
+        case '*': 
             d = a * b;         
             printf("%d", d);         
             break;         
