@@ -7,7 +7,7 @@ int main(){
         printf("Equilateral");
     }
     else if(a==b|| b==c ||a==c){
-        pintf("Idosceles");
+        pintf("Isosceles");
     }
     else{
         printf("Scalene");
