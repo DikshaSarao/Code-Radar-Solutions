@@ -3,7 +3,7 @@
 int main() {     
     int a, b;     
     char ch;     
-    scanf("%d" "%d" "%c", &a, &b, &ch);  // Space between format specifiers
+    scanf("%d %d %c", &a, &b, &ch);  // Space between format specifiers
      
     switch(ch) {         
         case '+':        
