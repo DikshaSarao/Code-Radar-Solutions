@@ -1,26 +1,22 @@
 #include <stdio.h> 
 
 int main() {     
-    int a, b, d;     
+    int a, b;     
     char ch;     
     scanf("%d" "%d" "%c", &a, &b, &ch);  // Space between format specifiers
      
     switch(ch) {         
-        case '+': 
-            d = a + b;         
-            printf("%d", d);         
+        case '+':        
+            printf("%d\n",a + b);         
             break;         
-        case '-': 
-            d = a - b;         
-            printf("%d", d);         
+        case '-':         
+            printf("%d",a - b);         
             break;         
-        case '/': 
-            d = a / b;         
-            printf("%d", d);         
+        case '/':          
+            printf("%d",a / b);         
             break;         
-        case '*': 
-            d = a * b;         
-            printf("%d", d);         
+        case '*':          
+            printf("%d",a * b);         
             break;         
         default: 
             printf("error");     
