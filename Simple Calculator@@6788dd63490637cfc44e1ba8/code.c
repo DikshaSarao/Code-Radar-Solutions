@@ -17,7 +17,7 @@ int main(){
         case '*': d = a*b;
         printf("%d",d);
         break;
-        default : printf("INvalid");
+        default : printf("error");
     }
     return 0;
 
