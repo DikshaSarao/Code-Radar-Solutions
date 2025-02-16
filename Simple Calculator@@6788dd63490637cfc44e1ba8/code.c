@@ -19,7 +19,8 @@ int main() {
             printf("%d\n",a * b);         
             break;         
         default: 
-            printf("error\n");     
+            printf("error\n");
+            break;     
     }     
     return 0;  
 }
