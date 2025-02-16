@@ -10,16 +10,16 @@ int main() {
             printf("%d\n",a + b);         
             break;         
         case '-':         
-            printf("%d",a - b);         
+            printf("%d\n",a - b);         
             break;         
         case '/':          
-            printf("%d",a / b);         
+            printf("%d\n",a / b);         
             break;         
         case '*':          
-            printf("%d",a * b);         
+            printf("%d\n",a * b);         
             break;         
         default: 
-            printf("error");     
+            printf("error\n");     
     }     
     return 0;  
 }
