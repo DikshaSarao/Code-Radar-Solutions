@@ -7,8 +7,8 @@ int main(){
     char b;
     float c;
     for(i=0;i<=N;i++){
-    scanf("%d" "%c" "%f",&a[i], &b[i], &c[i]);
-    printf("Roll Number: %d, Name: %c, Marks: %f",a[i],b[i],c[i]);
+    scanf("%d" "%c" "%f",&a, &b, &c);
+    printf("Roll Number: %d, Name: %c, Marks: %f",a,b,c);
     }
     return 0;
 
