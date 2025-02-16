@@ -12,7 +12,8 @@ int main() {
         case '-':         
             printf("%d\n",a - b);         
             break;
-        case '*': printf("%d",a * b);        
+        case '*': printf("%d",a * b); 
+        break;       
         case '/':
         if(b==0){
             printf("error\n");
