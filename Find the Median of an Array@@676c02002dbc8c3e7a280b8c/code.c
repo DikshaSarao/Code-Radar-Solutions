@@ -32,7 +32,7 @@ int main() {
     } else {
         // If N is even, median is the average of the two middle elements
         double median = (arr[N / 2 - 1] + arr[N / 2]) / 2.0;
-        printf("%.1f\n", median); // Print with one decimal place
+        printf("%d\n", median); // Print with one decimal place
     }
 
     return 0;
