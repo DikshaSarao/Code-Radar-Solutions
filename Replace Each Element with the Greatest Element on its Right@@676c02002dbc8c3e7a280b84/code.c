@@ -13,21 +13,17 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Find the greatest element in the array
-    int max = arr[0];
-    for (int i = 1; i < N; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+    int max_right = arr[N - 1]; // Start with the last element
+    arr[N - 1] = -1; // Set the last element to -1
+
+    // Traverse the array from right to left
+    for (int i = N - 2; i >= 0; i--) {
+        int current = arr[i];
+        arr[i] = max_right; // Replace current element with the greatest element to its right
+        if (current > max_right) {
+            max_right = current; // Update max_right if current element is greater
         }
     }
-
-    // Replace all elements with the greatest element, except the last one
-    for (int i = 0; i < N - 1; i++) {
-        arr[i] = max;
-    }
-
-    // Set the last element to -1
-    arr[N - 1] = -1;
 
     // Output the modified array
     for (int i = 0; i < N; i++) {
