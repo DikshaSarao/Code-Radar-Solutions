@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int N;
     
-    // Input size of array
+    // Input the size of the array
     scanf("%d", &N);
     int arr[N];
     
@@ -12,25 +13,19 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    // Create an array to track the frequency of elements
-    int freq[N];  // Frequency array to keep track of the counts (index 0 will not be used)
-    
-    // Initialize frequency array with 0
+    // Find the duplicate element
     for (int i = 0; i < N; i++) {
-        freq[i] = 0;
-    }
-    
-    // Find the duplicate
-    for (int i = 0; i < N; i++) {
-        // If frequency of element is already 1, it is the duplicate
-        if (freq[arr[i]] > 0) {
-            printf("%d\n", arr[i]);
-            return 0;  // Exit after finding the duplicate
+        int absValue = abs(arr[i]);  // Get the absolute value to handle negative numbers
+        
+        // If the element at index abs(arr[i]) is negative, it's the duplicate
+        if (arr[absValue] < 0) {
+            printf("%d\n", absValue);  // Output the duplicate
+            return 0;  // Exit the program after finding the duplicate
         }
         
-        // Otherwise, mark the element as seen by updating its frequency
-        freq[arr[i]]++;
+        // Otherwise, mark the element by making the value at index abs(arr[i]) negative
+        arr[absValue] = -arr[absValue];
     }
 
-    return 0;  // Shouldn't reach here if there is a duplicate
+    return 0;  // This line should not be reached if there is exactly one duplicate
 }
