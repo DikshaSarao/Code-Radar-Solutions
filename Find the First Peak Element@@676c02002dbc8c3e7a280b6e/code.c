@@ -1,49 +1,55 @@
 #include <stdio.h>
 
-int findFirstPeak(int arr[], int N) {
-    // Handle the case for arrays with one element
-    if (N == 1) {
+int findFirstPeak(int arr[], int n) {
+    // Edge case: If the array has only one element
+    if (n == 1) {
         return arr[0];
     }
-    
-    // Check if the first element is a peak
+
+    // Check the first element
     if (arr[0] >= arr[1]) {
         return arr[0];
     }
-    
-    // Check if the last element is a peak
-    if (arr[N - 1] >= arr[N - 2]) {
-        return arr[N - 1];
+
+    // Check the last element
+    if (arr[n - 1] >= arr[n - 2]) {
+        return arr[n - 1];
     }
-    
-    // Check for a peak element in the middle of the array
-    for (int i = 1; i < N - 1; i++) {
+
+    // Check the rest of the array
+    for (int i = 1; i < n - 1; i++) {
         if (arr[i] >= arr[i - 1] && arr[i] >= arr[i + 1]) {
             return arr[i];
         }
     }
-    
-    return -1; // If no peak element is found
+
+    return -1; // No peak element found (though this shouldn't happen with valid input)
 }
 
 int main() {
-    int N;
-    
-    // Input the size of the array
-    scanf("%d", &N);
-    
-    int arr[N];
-    
-    // Input the array elements
-    for (int i = 0; i < N; i++) {
+    int n;
+
+    // Take input from the user for the number of elements
+    // printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    // Declare an array of size n
+    int arr[n];
+
+    // Take input for the elements of the array
+    // printf("Enter %d elements of the array: ", n);
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    
+
     // Find the first peak element
-    int peak = findFirstPeak(arr, N);
-    
-    // Output the result
-    printf("%d\n", peak);
-    
+    int peak = findFirstPeak(arr, n);
+
+    if (peak != -1) {
+        printf("%d", peak);
+    } else {
+        printf("-1");
+    }
+
     return 0;
 }
