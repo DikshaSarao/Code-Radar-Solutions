@@ -17,7 +17,7 @@ int main(){
     }
     for(int i=0;i<N;i++){
         int d = sum_digit(arr[i]);
-        printf("%d",d);
+        printf("%d ",d);
     }
 
 }
