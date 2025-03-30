@@ -13,7 +13,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    int largestEven = -1; // Initialize to -1, in case no even number is found
+    int largestEven = -1; // Initialize to -1, to handle the case when no even number exists
     
     // Loop through the array and find the largest even number
     for (int i = 0; i < N; i++) {
