@@ -31,7 +31,7 @@ int main() {
         }
         
         // Print the frequency of arr[i]
-        printf("%d %d", arr[i], count);
+        printf("%d %d\n", arr[i], count);
     }
     
     return 0;
