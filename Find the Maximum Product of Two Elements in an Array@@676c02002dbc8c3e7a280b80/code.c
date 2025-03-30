@@ -19,6 +19,6 @@ int main(){
         } else if(arr[i]>max2){
             max2=arr[i];
         }
-    } printf("%d ",max1*max2);
+    } printf("%d",max1*max2);
     return 0;
 }
