@@ -17,15 +17,15 @@ int main() {
     for (int i = 0; i < N; i++) {
         int absValue = abs(arr[i]);  // Get the absolute value to handle negative numbers
         
-        // If the element at index abs(arr[i]) is negative, it's the duplicate
-        if (arr[absValue] < 0) {
+        // If the element at index absValue - 1 is negative, it is the duplicate
+        if (arr[absValue - 1] < 0) {
             printf("%d\n", absValue);  // Output the duplicate
-            return 0;  // Exit the program after finding the duplicate
+            return 0;  // Exit after finding the duplicate
         }
         
-        // Otherwise, mark the element by making the value at index abs(arr[i]) negative
-        arr[absValue] = -arr[absValue];
+        // Otherwise, mark the element by making the value at index absValue - 1 negative
+        arr[absValue - 1] = -arr[absValue - 1];
     }
 
-    return 0;  // This line should not be reached if there is exactly one duplicate
+    return 0;  // This line should not be reached if there's exactly one duplicate
 }
