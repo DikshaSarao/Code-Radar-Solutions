@@ -1,6 +1,6 @@
 // Your code here...
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 int sum_digit(int num){
     int sum=0;
     num=abs(num);
