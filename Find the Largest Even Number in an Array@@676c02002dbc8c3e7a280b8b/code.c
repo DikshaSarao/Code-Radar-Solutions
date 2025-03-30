@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>  // For INT_MIN
 
 int main() {
     int N;
@@ -13,7 +14,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    int largestEven = -1; // Initialize to -1, to handle the case when no even number exists
+    int largestEven = INT_MIN; // Initialize to the smallest possible integer
     
     // Loop through the array and find the largest even number
     for (int i = 0; i < N; i++) {
@@ -24,8 +25,12 @@ int main() {
         }
     }
     
-    // Output the result
-    printf("%d\n", largestEven);
+    // If no even number is found, output -1, otherwise output the largest even number
+    if (largestEven == INT_MIN) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", largestEven);
+    }
     
     return 0;
 }
