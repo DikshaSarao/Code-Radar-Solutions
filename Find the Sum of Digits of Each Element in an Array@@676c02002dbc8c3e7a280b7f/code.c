@@ -1,6 +1,6 @@
 // Your code here...
 #include <stdio.h>
-int sum(int num){
+int sum_digit(int num){
     sum=0;
     while(sum!=0){
         sum+=num%10;
@@ -13,10 +13,10 @@ int main(){
     scanf("%d",&N);
     int arr[N];
     for(int i=0;i<N;i++){
-        scannf("%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     for(int i=0;i<N;i++){
-        int d = sum(arr[i]);
+        int d = sum_digit(arr[i]);
         printf("%d",d);
     }
 
