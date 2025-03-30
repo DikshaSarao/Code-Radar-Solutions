@@ -16,4 +16,14 @@ int main() {
     int count = 0;
     
     // Count elements greater than K
-    for (int i = 0; i)
+    for (int i = 0; i < N; i++) {
+        if (arr[i] > K) {
+            count++;
+        }
+    }
+    
+    // Output the result
+    printf("%d\n", count);
+    
+    return 0;
+}
