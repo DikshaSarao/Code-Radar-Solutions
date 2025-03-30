@@ -11,11 +11,8 @@ int main(){
             printf(" ");
         }
         for(int k=1;k<=nst;k++){
-            if(k==1 || k<=nst){
-                printf("*");
-            }
-            else{printf(" ");}
-
+            printf("*");
+            
         }
         if(i<ml){
             nsp--;
