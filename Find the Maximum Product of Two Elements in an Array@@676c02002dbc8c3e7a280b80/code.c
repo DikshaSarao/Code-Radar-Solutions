@@ -2,12 +2,12 @@
 #include <stdlib.h>
 int main(){
     int N;
-    scanf("%d",&N):
+    scanf("%d",&N);
     int arr[N];
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int max1 = arr[0]; max2 = arr[1];
+    int max1 = arr[0]; int max2 = arr[1];
     if(max1<max2){
         max1=arr[1];
         max2=arr[0];
