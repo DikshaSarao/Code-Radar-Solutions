@@ -29,6 +29,9 @@ int main() {
         } else if (arr[i] > secondLargest && arr[i] != largest) {
             secondLargest = arr[i];   // Update second largest
         }
+        if(largest==secondLargest){
+            printf("-1");
+        }
     }
     
     // Output the second largest element
