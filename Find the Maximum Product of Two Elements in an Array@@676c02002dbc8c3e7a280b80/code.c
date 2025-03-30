@@ -7,17 +7,17 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int max1 = abs(arr[0]); int max2 = abs(arr[1]);
+    int max1 = arr[0]; int max2 = arr[1];
     if(max1<max2){
-        max1=abs(arr[1]);
-        max2=abs(arr[0]);
+        max1=arr[1];
+        max2=arr[0];
     }
     for(int i=2;i<N;i++){
-        if(abs(arr[i])>max1){
+        if(arr[i]>max1){
             max1=max2;
-            max1=abs(arr[i]);
-        } else if(abs(arr[i])>max2){
-            max2=abs(arr[i]);
+            max1=arr[i];
+        } else if(arr[i]>max2){
+            max2=arr[i];
         }
     } printf("%d",max1*max2);
     return 0;
