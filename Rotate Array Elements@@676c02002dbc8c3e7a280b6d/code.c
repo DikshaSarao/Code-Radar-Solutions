@@ -39,7 +39,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         printf("%d\n", arr[i]);
     }
-    printf("\n");  // For a new line at the end
+    // printf("\n");  // For a new line at the end
     
     return 0;
 }
