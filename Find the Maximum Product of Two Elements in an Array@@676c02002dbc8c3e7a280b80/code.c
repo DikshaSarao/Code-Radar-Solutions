@@ -18,8 +18,7 @@ int main(){
             max1=arr[i];
         } else if(arr[i]>max2){
             max2=arr[i];
-            int d = max1*max2;
-        }
+        } int d = max1*max2;
     } printf("%d",d);
     return 0;
 }
